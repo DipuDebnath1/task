@@ -1,0 +1,13 @@
+<svg width="239" height="167" viewBox="0 0 239 167" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 1272">
+<path id="Rectangle 319" d="M238.613 157.517C238.613 156.677 237.933 155.996 237.093 155.996H3.4325C1.96306 155.996 0.771851 157.188 0.771851 158.657C0.771851 163.065 4.34547 166.639 8.75375 166.639H229.491C234.529 166.639 238.613 162.555 238.613 157.517Z" fill="#B4B4B4"/>
+<rect id="Rectangle 318" width="237.841" height="159.131" rx="2.94666" transform="matrix(-1 0 0 1 238.613 0.817383)" fill="url(#paint0_linear_553_173)"/>
+<circle id="Ellipse 192" cx="16.9147" cy="16.9147" r="16.9147" transform="matrix(-1 0 0 1 136.607 63.4685)" fill="white"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_553_173" x1="168.032" y1="-119.429" x2="80.0943" y2="196.111" gradientUnits="userSpaceOnUse">
+<stop offset="0.0171777" stop-color="white"/>
+<stop offset="1" stop-color="#D7D7D7"/>
+</linearGradient>
+</defs>
+</svg>

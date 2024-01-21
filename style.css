@@ -1,0 +1,800 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    max-width: 1440px;
+    
+}
+/* shared styles start here */
+img{
+    max-width: 100%;
+}
+.container{
+    width: 95%;
+    margin: auto;
+} 
+.btn-primary{
+    display: flex;
+    width: 200px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    background: #ED2D66;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .3s all ease;
+    }
+.btn-primary:hover{
+        background: #ff4980;
+
+    }
+.btn-secondary{
+    display: flex;
+    width: 200px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    color: #ED2D66;
+    background: #FFF;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .3s all ease;
+    }
+.btn-secondary:hover{
+        color: #ff4980;
+
+    }
+.primary-title{
+        font-size: 2rem;
+        color: white;
+
+    }
+.secondary-title{
+        font-size: 1.4rem;
+        color: white;
+        font-weight: 600;
+
+    }
+.text{
+        font-size: 17px;
+    }
+
+/* custom style  */
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.logo img{
+    width: 162.222px;
+    height: 67px;
+}
+.hero{    
+    position: relative;
+    background-image: url('image/herobg-2.png');
+    background-size: cover;
+    overflow: hidden;
+    opacity: 1;
+    margin-bottom: 3rem;
+
+    z-index: 10;
+}
+.hero::before{
+    content: '';
+    position: absolute;
+    background-image: url('/image/Background-1.png');
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .1;
+    z-index: -1;
+}
+.hero > div{
+  background: url('/image/bg-blue1.png');
+  height: 100%;
+  width: 100%;
+
+}
+
+.hero-main{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 0;
+}
+.hero-text-section{
+    flex: 1;
+}
+.hero-text-section h2 span{
+    color: #ED2D66;
+}
+.hero-btns{
+    display: flex;
+     gap: 2rem;
+     margin-top: 1rem;
+}
+
+.hero-image-section{
+    flex: 1;
+    display: flex;
+}
+.i-monitor{
+    /* max-width: 80%; */
+    margin-left: 10%;
+    position: relative;
+}
+.i-casing{
+    max-width: 60%;
+    margin-left: 10%;
+    position: relative;
+}
+.i-display{
+    position: absolute;
+    left: 0;
+    width: 55%;
+    top: 18px;
+    left: 12.5%;
+}
+.iphone{
+    position: absolute;
+    left: 5%;
+    bottom: 0%;
+    height: 50%;
+}
+.laptop{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    border: 1px  solid gray;
+    border-bottom: 0;
+    border-radius: 10px;
+
+}
+.laptop img{
+    border: 5px solid ;
+    border-radius: 10px;
+}
+.laptop-display-bottom-site{
+    position: absolute; 
+    right: 0;
+    bottom: 0;
+    height: 10px;
+    width: 100%;
+    background: rgb(54, 54, 54);
+}
+.laptop-keybord{
+    position: absolute;
+    right: -5px; 
+    bottom: -15px;
+    width: 105%;
+}
+.laptop-cemera{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    text-align: center;
+}
+.laptop-cemera div{
+    background: #000;
+    color: gray;
+    font-size: 10px;
+    width: 20%;
+    margin: auto;
+    padding: 0;
+    border-radius: 10px;
+}
+.hero-about{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    color: white;
+    padding: 3rem 0;
+
+}
+.hero-service{
+    gap: 2rem;
+    width: 65%;
+    margin: auto;
+    overflow: auto;
+    background: none;
+    display: grid;
+    grid-template-columns: repeat(7, 150px);}
+.hero-service::-webkit-scrollbar{
+        height: 0;
+    }
+.hero-service > div {
+    background-color: rgb(243, 243, 243);
+    padding: .5rem;
+    text-align: center;
+    border-radius: 5px;
+}   
+.hero-service > div h3 {
+    font-size: .7rem;
+}
+/* .experince-salonnz start*/
+.experince-salonnz {
+    position: relative;
+    padding-bottom: 2rem;
+}
+.experince-salonnz .lt-icon{
+position: absolute;
+margin-left: 5rem;
+top: -10%;
+}
+.experince-salonnz .rt-icon{
+position: absolute;
+right: 15%;
+top: -5%;
+}
+.experince-salonnz .br-icon{
+position: absolute;
+bottom: 0;
+right: 10%;
+}
+.experince-salonnz .bm-icon{
+position: absolute;
+bottom: -1rem;
+right: 30%;
+}
+ .experince-salonnz .hero-about{
+    color: #002478;
+ }
+ .salonnz-laptop{
+    width: 100%;
+ }
+ .salonnz-laptop-cover{
+    position: relative;
+    background: rgb(38, 37, 37);
+    width: 60%;
+    margin: auto;
+    padding: 3px;   
+    padding-bottom: 10px;
+    border-radius: 10px;
+
+ }
+ .salonnz-laptop-screen{
+    width: 100%;
+    height: 100%;
+    margin:auto;
+    border:25px solid #000;
+    border-bottom:20px solid #000;
+    border-top-right-radius: 10px; 
+    border-top-left-radius: 10px; 
+ }
+ .fa-play{
+    position: absolute;
+    top: 48%;
+    left: 48%;
+    padding: 20px;
+    background: #202047a8; 
+    color: white;
+    border-radius: 50%;
+}
+ .salonnz-laptop-cover h2{
+    position: absolute;
+    bottom: 5px;
+    left: 46%;
+    font-size: 10px;
+    text-align: center ;
+    color: #A0AEC0;
+ }
+ .salonnz-laptop-keybord{
+    width: 70%;
+    position: relative;
+    display: block;
+    margin: auto;
+    margin-top: -5px;
+
+ }
+ /* unlock-ultimate-slaon start here */
+ .unlock-ultimate-slaon{
+    background: #202047;
+    color: white;
+ }
+ .unlock-ultimate-slaon > div{
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-left: 2.5%;
+ }
+ .unlock-ultimate-slaon .text-content{
+    padding: 3rem 1rem  3rem 0;
+    flex: 1;
+ }
+.unlock-ultimate-slaon .text-content p{
+    padding: 1.5rem 0;
+}
+.unlock-ultimate-slaon .image-content{
+    flex: 1;
+    height: 100%;
+    background: #000;
+}
+.unlock-ultimate-slaon .image-content img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+/* Streamlined Salon Management slider */
+.carousel-container{
+    position: relative;
+    /* height: 50vh; */
+}
+.carousel-item{
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    color: #002478;
+    display: flex;
+}
+.carousel-item > .carousel-img{
+flex-basis: 55%;
+}
+.carousel-item > .carousel-img img{
+width: 100%;
+}
+.carousel-item > .carousel-text{
+flex-basis: 45%;
+}
+.carousel-prev,
+.carousel-next{
+    position: absolute;
+    font-size: 2rem;
+    padding: 0 1rem;
+    border-radius: 50%;
+    top: 45%;
+    color: gray;
+    border: 1px solid ;
+    transition: .3s all ease;
+}
+.carousel-next{
+   right: 0;
+}
+.carousel-prev:hover,
+.carousel-next:hover{
+    background-color: #202047;
+}
+/* .exclusive-reword-section */
+.exclusive-reword-section {
+    background: #202047;
+    position: relative;
+} 
+.exclusive-reword-svg{
+    display: flex; 
+    justify-content: space-between;
+}
+.main-reword-section{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 3rem 0;
+}
+.text-reword-section{
+    flex: 1;
+}
+.image-reword-section{
+    flex: 1;
+    position: relative;
+}
+.reward{
+    display: flex;
+    gap: 1rem;
+    padding-top: 1.3rem;
+}
+.reward img{
+    width: 40px;
+    height: 40px;
+}
+
+.image-reword-section figure{
+    display: flex ;
+    justify-content: center;
+    align-items: end;
+    height: 100%;
+}
+.image-reword-section figure img{
+    width: 60%;
+    height: auto;
+}
+.main-reword-section svg{
+    position: absolute;
+    top: 0;
+}
+.main-reword-section .svg-start{
+    left: 3rem;
+    top: 4rem;
+}
+.main-reword-section .svg-end{
+    right: 0rem;
+    top: 4rem;
+}
+.main-reword-section .love-svg1{
+top: 8.5rem;
+left: 49%;
+}
+.main-reword-section .love-svg2{
+top: 7rem;
+left: 55%;
+}
+.main-reword-section .love-svg3{
+top: 6rem;
+left: 45%;
+}
+.main-reword-section .love-svg4{
+top: 5rem;
+left: 53%;
+}
+.main-reword-section .love-svg5{
+top: 3rem;
+left: 49%;
+}
+
+/* get started start here  */
+.get-started{
+    padding: 3rem 0;
+    color: #002478;
+} 
+.get-started h2{
+    text-align: center;
+    color: #002478;
+} 
+.get-started .content{
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.get-started .content > div{
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.get-started .content > div div{
+  width: 50%;
+  margin: auto;
+}
+.get-started .content > div div .number{
+  background-color: #ED2D66;
+  width: 25px;
+  height:25px;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.get-started .content > div div h4{
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+.get-started .content > div:nth-of-type(odd){
+ text-align: right;
+}
+.get-started .content img{
+    height: auto;
+    width: 50%; 
+    display: block;
+    margin: auto;
+}
+.get-started .two,
+.get-started .three{
+    position: absolute;
+    left: -14px;
+}
+.get-started .one{
+    position: absolute;
+    right: -14px;
+}
+
+
+/* download app section  */
+.download-section{
+    background-color: #202047;
+    margin-top: 2rem;
+}
+.download-section .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    color: white;
+}
+.download-section .text-content{
+    padding: 2rem 0;
+}
+.download-section .text-content p{
+    font-size: 15px;
+    padding: .5rem;
+}
+.download-section .text-content button{
+    margin: 1rem 0;
+}
+.download-section .text-content p{
+    display: flex;
+     gap: 1rem;
+}
+.download-section .text-content p span{
+    border: 1px solid white;
+    width: 7.5rem;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 3px;
+}
+.download-section .image-content figure img{
+    width: 60%;
+    display: block;
+    position: relative;
+    margin-top: -3.5rem;
+    margin-bottom: -3.5rem;
+
+}
+
+/* about-us */
+.about-us{
+    margin-left: 2.5%;
+    color: #202047;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /* padding: 6rem 0 3rem 0 0; */
+    margin: 6rem 0 3rem 2.5rem;
+}
+.about-us h2{ 
+    color: #202047;
+}
+.about-us button{ 
+    border: 1px solid #202047;
+    font-size: 1.3rem;
+    padding: 0 .7rem;
+    border-radius: 50%;
+    transition: .3s all ease;
+}
+.about-us button:hover{ 
+    border: 1px solid #202047;
+    background-color:  #202047;
+    color: white;
+}
+
+/* personalized-demo */
+.main-personalized-demo{
+    background: url('/image/bg-blue1.png');
+}
+.personalized-demo{
+    background:  url('image/bg-blue.png');
+    padding: 5rem 0 3rem 0;
+}
+.personalized-demo > div{
+    display: grid ;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 5rem;
+}
+.personalized-demo > div .text-content{
+   color: white;
+}
+.personalized-demo > div .text-content p{
+    padding: 1rem 0;
+}
+.contact-madia{
+    display: flex;
+    color: #ED2D66;
+    gap: 2rem;
+}
+
+.personalized-demo > div form{
+    display: flex ;
+    flex-direction: column;
+    gap: 1rem;
+ }
+.personalized-demo > div form div{
+    width: 100%;
+    display: flex;
+    gap:1rem;
+ }
+.personalized-demo > div form textarea ,
+.personalized-demo > div form input {
+    width: 100%;
+    padding: .4rem;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+ }
+
+ /* footer  */
+ .footer-info{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    list-style: none;
+    padding: 3rem 0;
+
+ }
+ .footer-info img{
+    width: 200px;
+
+ }
+ .footer-info:first-child i{
+    padding: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+ }
+ .footer-info ul li{
+    list-style: none;
+    color: gray;
+    cursor: pointer;
+ }
+ .footer-info ul li:hover{
+    text-decoration: underline;
+}
+ .footer-info ul li i{
+padding-right: 15px; 
+}
+.footer-end{
+    text-align: center;
+    padding: 10px;
+    background: #202047;
+    color: white;
+    font-size: 12px;
+    font-weight: 200;
+}
+
+
+
+/* Responsive */
+
+@media screen and (max-width:1024px){
+    .image-reword-section figure{
+        align-items: center;
+    }
+    .hero-main{
+      flex-direction: column-reverse;
+      gap: 2rem;
+    }
+    .hero-text-section{
+        width: 90%;
+    }
+    .hero-about{
+        width: 90%;
+        padding: 1rem 0 2rem 0;
+    }
+    .image-reword-section figure img{
+        width: 80%;
+    }
+    .main-reword-section .svg-start{
+        left: 0rem;
+        top: 8rem;
+    }
+  
+    .main-reword-section .svg-end{
+        right: 0rem;
+        top: 8rem;
+    }
+
+    .main-reword-section .love-svg1{
+        top: 8.5rem;
+        left: 45%;
+        }
+        .main-reword-section .love-svg2{
+        top: 7rem;
+        left: 55%;
+        }
+        .main-reword-section .love-svg3{
+        top: 6rem;
+        left: 40%;
+        }
+        .main-reword-section .love-svg4{
+        top: 4rem;
+        left: 48%;
+        }
+        .main-reword-section .love-svg5{
+        top: 2rem;
+        left: 44%;
+        }
+        .contact-madia{
+            flex-direction: column;
+            gap: 0;
+        }
+        .footer-info{
+            grid-template-columns: 1fr 1fr;
+            gap:2rem;
+         }   
+}
+
+/* mobile view  */
+@media screen and (max-width:620px) {
+    .hero-about{
+        width: 80%
+    }
+    .unlock-ultimate-slaon > div{
+        grid-template-columns: 1fr;
+        align-items: center;        
+        margin-left: 0;
+
+     }
+    .experince-salonnz .lt-icon {
+        margin-left: 0;
+    }
+    .personalized-demo > div{
+        grid-template-columns: 1fr;
+    }
+    .unlock-ultimate-slaon .text-content {
+       padding: 2.5%;
+    }
+    .carousel-item{
+        flex-direction: column;
+        padding: 2rem 0;
+
+    }
+    .carousel-prev,
+    .carousel-next{
+        font-size: 1rem;
+        padding: 0 .5rem;
+    }
+    .main-reword-section{
+        flex-direction: column-reverse;
+    }
+
+    
+.image-reword-section figure{
+    padding-top: 10rem;
+}
+    
+    .main-reword-section .svg-start{
+        left: 0rem;
+        top: 0rem;
+    }
+  
+    .main-reword-section .svg-end{
+        right: 0rem;
+        top: 0rem;
+    }
+
+    .main-reword-section .love-svg1{
+        top: 8.5rem;
+        left: 45%;
+        }
+        .main-reword-section .love-svg2{
+        top: 7rem;
+        left: 55%;
+        }
+        .main-reword-section .love-svg3{
+        top: 6rem;
+        left: 40%;
+        }
+        .main-reword-section .love-svg4{
+        top: 4rem;
+        left: 48%;
+        }
+        .main-reword-section .love-svg5{
+        top: 2rem;
+        left: 44%;
+        }
+
+        .get-started .content > div div{
+            width: 80%;
+            margin: auto;
+          }
+          .get-started .content img{
+           width: 100%;
+        }
+        .about-us{
+
+            grid-template-columns: 1fr;
+
+        }
+}
