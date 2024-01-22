@@ -85,7 +85,7 @@ header nav{
 }
 .hero{    
     position: relative;
-    background-image: url('image/herobg-2.png');
+    background-image: url('image/herobg2.png');
     background-size: cover;
     overflow: hidden;
     opacity: 100;
@@ -95,7 +95,7 @@ header nav{
 .hero::before{
     content: '';
     position: absolute;
-    background: url('/image/Background-1.png');
+    background: url('/image/Background1.png');
     background-position: center;
     background-size: cover;
     top: 0;
@@ -106,7 +106,7 @@ header nav{
     z-index: -1;
 }
 .hero > div{
-  background: url('/image/bg-blue1.png');
+  background: url('/image/bgblue1.png');
   height: 100%;
   width: 100%;
   z-index: -1;
@@ -621,7 +621,7 @@ left: 49%;
 }
 /* personalized-demo */
 .main-personalized-demo{
-    background: url('/image/bg-blue1.png');
+    background: url('/image/bgblue1.png');
 }
 .personalized-demo{
     background:  url('image/bg-blue.png');
