@@ -2,12 +2,21 @@ let scrollContainer = document.querySelector('.hero-service')
 scrollContainer.addEventListener("wheel",(evt)=>{
     evt.preventDefault()
     scrollContainer.scrollLeft += evt.deltaY
+	console.log(evt);
+
+})
+
+let clientReview = document.querySelector('.client-review')
+clientReview.addEventListener("wheel",(evt)=>{
+    evt.preventDefault()
+    clientReview.scrollLeft += evt.deltaY
 })
 
 //****carousel slide start here *** */ 
     let carouselItem = document.querySelectorAll(".carousel-item"),
 	arrowLeft = document.querySelector("#arrow-left"),
-	arrowRight = document.querySelector("#arrow-right")
+	arrowRight = document.querySelector("#arrow-right"),
+	slidersID = document.querySelectorAll('.handleSliderID'),
     current = 0;
 
 // Clear all images
@@ -51,6 +60,46 @@ arrowRight.addEventListener("click", function () {
 	}
 	slideRight();
 });
+
+// slider bottom handle buttons 
+const slideLeftbtn =()=>{
+	if (current === 0) {
+		current = carouselItem.length;
+	}
+	slideLeft();
+}
+const slideRightbtn =()=>{
+	if (current === carouselItem.length - 1) {
+		current = -1;
+	}
+	slideRight();
+}
+
+
+function resetSliderBtn () {
+	for (let i = 0; i < slidersID.length; i++) {
+		slidersID[i].classList.remove(".slider-buttons-active")
+		console.log(i);
+	}
+}
+const handleSliderID = (id) =>{
+	reset();
+	// resetSliderBtn ();
+	carouselItem[id].style.display = "flex";
+	current=id;
+	for (let i = 0; i < slidersID.length; i++) {	
+		slidersID[id].classList.add("slider-buttons-active")
+		if (i !==id) {
+			console.log(i);
+			slidersID[id].classList.remove("slider-buttons-active")
+		}		
+	}
+	// for (let i = 0; i < slidersID.length; i++) {	
+	// 	if (i !==id) {
+	// 		slidersID[id].classList.remove("slider-buttons-active")
+	// 	}		
+	// }
+}
 
 startSlide();
 
